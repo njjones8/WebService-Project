@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:53187/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:53187/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:53187/Service1.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_BankWithdraw_InputMessage">
+    <wsdl:part name="parameters" element="tns:BankWithdraw" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BankWithdraw_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BankWithdrawResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BankDeposit_InputMessage">
+    <wsdl:part name="parameters" element="tns:BankDeposit" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BankDeposit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BankDepositResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSubs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubs" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSubs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddSub_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSub" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddSub_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSubResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RemoveSub_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveSub" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RemoveSub_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveSubResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AvgWindIntensity_InputMessage">
+    <wsdl:part name="parameters" element="tns:AvgWindIntensity" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AvgWindIntensity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AvgWindIntensityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNews_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNews" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNews_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNewsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="BankWithdraw">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BankWithdraw" message="tns:IService1_BankWithdraw_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BankWithdrawResponse" message="tns:IService1_BankWithdraw_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BankDeposit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BankDeposit" message="tns:IService1_BankDeposit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BankDepositResponse" message="tns:IService1_BankDeposit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetSubs" message="tns:IService1_GetSubs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetSubsResponse" message="tns:IService1_GetSubs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSub">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddSub" message="tns:IService1_AddSub_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddSubResponse" message="tns:IService1_AddSub_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveSub">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RemoveSub" message="tns:IService1_RemoveSub_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RemoveSubResponse" message="tns:IService1_RemoveSub_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AvgWindIntensity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AvgWindIntensity" message="tns:IService1_AvgWindIntensity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AvgWindIntensityResponse" message="tns:IService1_AvgWindIntensity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNews">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetNews" message="tns:IService1_GetNews_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetNewsResponse" message="tns:IService1_GetNews_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BankWithdraw">
+      <soap:operation soapAction="http://tempuri.org/IService1/BankWithdraw" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BankDeposit">
+      <soap:operation soapAction="http://tempuri.org/IService1/BankDeposit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubs">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetSubs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSub">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddSub" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveSub">
+      <soap:operation soapAction="http://tempuri.org/IService1/RemoveSub" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AvgWindIntensity">
+      <soap:operation soapAction="http://tempuri.org/IService1/AvgWindIntensity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNews">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetNews" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:53187/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

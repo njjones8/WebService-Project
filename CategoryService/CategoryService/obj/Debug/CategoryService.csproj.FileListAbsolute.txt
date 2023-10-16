@@ -1,0 +1,7 @@
+C:\Users\small\source\repos\CategoryService\CategoryService\bin\CategoryService.dll.config
+C:\Users\small\source\repos\CategoryService\CategoryService\bin\CategoryService.dll
+C:\Users\small\source\repos\CategoryService\CategoryService\bin\CategoryService.pdb
+C:\Users\small\source\repos\CategoryService\CategoryService\obj\Debug\CategoryService.csproj.AssemblyReference.cache
+C:\Users\small\source\repos\CategoryService\CategoryService\obj\Debug\CategoryService.csproj.CoreCompileInputs.cache
+C:\Users\small\source\repos\CategoryService\CategoryService\obj\Debug\CategoryService.dll
+C:\Users\small\source\repos\CategoryService\CategoryService\obj\Debug\CategoryService.pdb

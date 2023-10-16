@@ -1,0 +1,6 @@
+- Everything was made in Visual Studio 2022
+- Category Service is RESTful and BankSubService is WSDL
+- Run both services then the tryitpage
+- The txt files that I talk about on the tryitpage are located in 
+	BankSubService/BankSubService/bankaccounts.txt
+	BankSubService/BankSubService/subService.txt
